@@ -1,0 +1,39 @@
+﻿@model PruebaDF.Models.Materia
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Eliminar</h1>
+<h2>¿Está seguro que desea eliminar esta materia?</h2>
+<div>
+    <h4>Materia</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Codigo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Codigo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Creditos)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Creditos)
+        </dd>
+    </dl>
+    <div>
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="MateriaId" />
+            <input type="submit" value="Eliminar" class="btn btn-danger" />
+            <a class="btn btn-secondary" asp-action="Index">Volver</a>
+        </form>
+    </div>
+</div>

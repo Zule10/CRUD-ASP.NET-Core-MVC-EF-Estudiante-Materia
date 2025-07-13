@@ -11,7 +11,7 @@ using PruebaDF.Models;
 namespace PruebaDF.Migrations
 {
     [DbContext(typeof(PruebaDfContext))]
-    [Migration("20250712164827_AddRelationME")]
+    [Migration("20250713215237_AddRelationME")]
     partial class AddRelationME
     {
         /// <inheritdoc />
@@ -61,7 +61,7 @@ namespace PruebaDF.Migrations
                     b.Property<int?>("Codigo")
                         .HasColumnType("int");
 
-                    b.Property<int?>("Creditos")
+                    b.Property<int>("Creditos")
                         .HasColumnType("int");
 
                     b.Property<string>("Nombre")

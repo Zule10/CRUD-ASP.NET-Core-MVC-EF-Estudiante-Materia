@@ -58,7 +58,7 @@ namespace PruebaDF.Migrations
                     b.Property<int?>("Codigo")
                         .HasColumnType("int");
 
-                    b.Property<int?>("Creditos")
+                    b.Property<int>("Creditos")
                         .HasColumnType("int");
 
                     b.Property<string>("Nombre")

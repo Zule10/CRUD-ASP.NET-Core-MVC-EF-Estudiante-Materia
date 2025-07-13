@@ -117,7 +117,7 @@ namespace PruebaDF.Repository
         public bool AsociarMateria(int id, int idMat)
         {
             var materiaAsociar = ObtenerMateriaAsociada(idMat);
-            int? creditosMateria = materiaAsociar.Creditos;
+            int creditosMateria = materiaAsociar.Creditos;
 
             var materiasCreditos = ObtenerMateriasEstudianteId(id);
             int cantidadMateriasCreditos = materiasCreditos.Count(m => m.Materia.Creditos > _cantidadCreditos);

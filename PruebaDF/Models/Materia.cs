@@ -11,8 +11,8 @@ public partial class Materia
     public string Nombre { get; set; } = null!;
 
     public int? Codigo { get; set; }
-
-    public int? Creditos { get; set; }
+    
+    public int Creditos { get; set; }
 
     [NotMapped]
     public string NombreCreditos

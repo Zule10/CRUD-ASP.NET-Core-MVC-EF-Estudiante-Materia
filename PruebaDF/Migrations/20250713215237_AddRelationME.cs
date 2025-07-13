@@ -33,7 +33,7 @@ namespace PruebaDF.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nombre = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     Codigo = table.Column<int>(type: "int", nullable: true),
-                    Creditos = table.Column<int>(type: "int", nullable: true)
+                    Creditos = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
